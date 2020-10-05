@@ -103,6 +103,10 @@ public class FlyingCreature extends Creature implements Fly
             specialBird.setId(id);
             specialBird.start(new Scanner(System.in));
         }
+        else
+        {
+            start(new Scanner(System.in));
+        }
     }
 
     @Override
