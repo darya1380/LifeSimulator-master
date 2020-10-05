@@ -2,58 +2,8 @@ package creature.base.animals_basics;
 
 import creature.base.actions.Jump;
 
-import java.util.Scanner;
-
-public class JumpingCreature extends Creature implements Jump
+public abstract class JumpingCreature extends Creature implements Jump
 {
-    private int jumpWill;
-    private int jumpSkill;
-    public JumpingCreature()
-    {
-        this.jumpWill = 0;
-        this.jumpSkill = 0;
-    }
-    @Override
-    public void jump() {
 
-    }
 
-    @Override
-    public void learn() {
-
-    }
-
-    @Override
-    public void start(Scanner scanner)
-    {
-        System.out.println("1) jump");
-        System.out.println("2) learn");
-        System.out.println("3) evaluate");
-        System.out.println("4) eat");
-        int in = scanner.nextInt();
-        switch (in)
-        {
-            case 1: jump();
-            break;
-            case 2: learn();
-            break;
-            case 3: evaluate();
-            break;
-            case 4: eat();
-            break;
-            default: start(scanner);
-            break;
-        }
-
-    }
-
-    @Override
-    protected void evaluate() {
-
-    }
-
-    @Override
-    protected void eat() {
-
-    }
 }
